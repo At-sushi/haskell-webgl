@@ -181,10 +181,8 @@ foreign import javascript unsafe "$1.getActiveAttrib($2, $3)"
 foreign import javascript unsafe "$1.getActiveUniform($2, $3)"
     getActiveUniform :: Context -> Program -> Word -> IO ActiveInfo
 
-{-
 foreign import javascript unsafe "$1.getAttachedShaders($2)"
     getAttachedShaders :: Context -> Program -> IO JSArray
--}
 
 foreign import javascript unsafe "$1.getAttribLocation($2, $3)"
     getAttribLocation :: Context -> Program -> JSString -> IO Int32
