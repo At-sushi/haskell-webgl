@@ -60,7 +60,7 @@ library
 
     -- Modules exported by the library.
     exposed-modules:
-        Graphics.WebGL,
+--        Graphics.WebGL,
         Graphics.WebGL.Const,
         Graphics.WebGL.Raw,
         Graphics.WebGL.Types
@@ -72,7 +72,7 @@ library
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    base >=4.11 && <5, ghcjs-base ^>=0.2.1
+    build-depends:    base >=4.11 && <5, jsaddle ^>=0.9.8.3
 
     -- Directories containing source files.
     hs-source-dirs:   src
@@ -105,5 +105,5 @@ test-suite webgl-test
     -- Test dependencies.
     build-depends:
         base >=4.11 && <5,
-        ghcjs-base ^>=0.2.1,
+        jsaddle ^>=0.9.8.3,
         webgl
