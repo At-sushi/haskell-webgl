@@ -12,12 +12,12 @@ permissions:
 jobs:
   runhaskell:
     name: Build
-    runs-on: ubuntu-21.10 # or macOS-latest, or windows-latest
+    runs-on: ubuntu-latest # or macOS-latest, or windows-latest
     steps:
       - uses: actions/checkout@v3
       - uses: haskell-actions/setup@v2
         with:
-          ghc-version: '7.10.3' # Exact version of ghc to use
+          ghc-version: '8.0.1' # Exact version of ghc to use
           # cabal-version: 'latest'. Omitted, but defaults to 'latest'
           enable-stack: true
           stack-version: 'latest'
