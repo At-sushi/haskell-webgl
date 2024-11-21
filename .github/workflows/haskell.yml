@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: haskell-actions/setup@v2
         with:
-          ghc-version: '8.6.5' # Exact version of ghc to use
+          ghc-version: '8.10.7' # Exact version of ghc to use
           # cabal-version: 'latest'. Omitted, but defaults to 'latest'
       # You may pin to the exact commit or the version.
       # uses: cachix/install-nix-action@08dcb3a5e62fa31e2da3d490afc4176ef55ecd72
