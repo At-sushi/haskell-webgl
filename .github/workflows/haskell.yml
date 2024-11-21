@@ -24,7 +24,7 @@ jobs:
       - uses: cachix/install-nix-action@v30
       # Install ghcjs
       - run: nix-channel --add https://nixos.org/channels/nixos-24.05 nixpkgs
-             nix-channel --update
-             nix-env -iA nixpkgs.haskell.compiler.ghcjs
+      - run: nix-channel --update
+      - run: nix-env -iA nixpkgs.haskell.compiler.ghcjs
       # Build command
       - run: cabal build --ghcjs
