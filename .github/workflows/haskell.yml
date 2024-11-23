@@ -36,4 +36,4 @@ jobs:
       - run: nix-env -iA nixpkgs.haskell.compiler.ghcjs
       # Build command
       - run: cabal build --ghcjs
-      - run: cabal sdist --ghcjs
+      - run: cabal haddock --haddock-for-hackage --ghcjs
